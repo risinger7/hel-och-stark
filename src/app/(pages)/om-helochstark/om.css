@@ -1,0 +1,20 @@
+.om-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.om-text-container {
+    padding-top: 4rem;
+    max-width: 32rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.om-text {
+    font-size: 16px;
+    line-height: 1.4;
+}
