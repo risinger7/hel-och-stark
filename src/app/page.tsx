@@ -1,14 +1,6 @@
 "use client";
-import Image from "next/image";
-import styles from "./page.module.css";
-import Link from "next/link";
 import "./page.css";
-import {
-  kanit400,
-  noto400,
-  encodeSans700,
-  encodeSans400,
-} from "@/components/fonts/fonts";
+import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts";
 import Navbar from "@/components/Navbar/Navbar";
 import { useRouter } from "next/navigation";
 
@@ -23,10 +15,10 @@ export default function Home() {
       <Navbar />
       <div className="welcome-page">
         <div className="welcome-container">
-          <h1 className={`${encodeSans700.className} welcome-title`}>
-            varmt välkommen till hel & stark!
+          <h1 className={`${lexend700.className} welcome-title`}>
+            Varmt välkommen till hel & stark!
           </h1>
-          <p className={noto400.className}>
+          <p className={lexend400.className}>
             Välkommen till en plats där din hälsa och välmående står i centrum
             med behanlingar anpassade efter dina unika behov.
           </p>
@@ -36,7 +28,7 @@ export default function Home() {
         </div>
       </div>
       <div className="footer">
-        <div className={`${encodeSans400.className} footer-info`}>
+        <div className={`${lexend200.className} footer-info`}>
           <p>Telefon: 070 285 33 22</p>
           <p>Email: camilla.risinger@gmail.com</p>
           <p>Adress: Bromma, Gustavslundsvägen, 26 Alviks Torg</p>

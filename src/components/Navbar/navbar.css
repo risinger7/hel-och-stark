@@ -1,9 +1,10 @@
 .navbar {
-    width: 100%;
-    background-color: #000000;
-    justify-content: center;
-    display: flex;
-    height: 4rem;
-    align-items: center;
-    gap: 2rem;
+  width: 100%;
+  background-color: var(--navbar);
+  color: black;
+  justify-content: center;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  gap: 2rem;
 }
