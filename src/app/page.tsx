@@ -28,10 +28,18 @@ export default function Home() {
         </div>
       </div>
       <div className="footer">
-        <div className={`${lexend200.className} footer-info`}>
-          <p>Telefon: 070 285 33 22</p>
-          <p>Email: camilla.risinger@gmail.com</p>
-          <p>Adress: Bromma, Gustavslundsvägen, 26 Alviks Torg</p>
+        <div className="footer-info">
+          <div className={`${lexend200.className} footer-info-grid`}>
+            <p className={`${lexend400.className} grid-span-2`}>Kontakt</p>
+            <p className="grid-item">Telefon:</p>
+            <p className="grid-item">070 285 33 22</p>
+            <p className="grid-item">Email:</p>
+            <p className="grid-item">camilla.risinger@gmail.com</p>
+            <p className="grid-item">Adress:</p>
+            <p className="grid-item">
+              Bromma, Gustavslundsvägen, 26 Alviks Torg
+            </p>
+          </div>
         </div>
         <div className="map">
           <iframe

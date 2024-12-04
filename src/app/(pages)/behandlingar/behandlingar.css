@@ -17,14 +17,14 @@
 
 .grid-item {
   width: 100%;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 0.5rem;
-  min-height: 350px;
+  min-height: 400px;
   position: relative;
   overflow: hidden;
 }
 .grid-item-title {
-  color: white;
+  color: rgb(0, 0, 0);
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
@@ -41,6 +41,14 @@
   text-overflow: ellipsis;
   display: block;
   max-height: 24%;
+}
+.text-button {
+  cursor: pointer;
+  color: blue;
+  margin-left: 1rem;
+}
+.margin-left {
+  margin-left: 1rem;
 }
 
 button {
