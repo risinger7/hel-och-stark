@@ -1,17 +1,17 @@
-"use client";
-import Container from "@/components/container/Container";
-import "./page.css";
-import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts";
-import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navbar/Navbar";
-import { useRouter } from "next/navigation";
-import Popular from "@/components/popular/Popular";
+"use client"
+import Container from "@/components/container/Container"
+import "./page.css"
+import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts"
+import Footer from "@/components/footer/Footer"
+import Navbar from "@/components/navbar/Navbar"
+import { useRouter } from "next/navigation"
+import Popular from "@/components/popular/Popular"
 
 export default function Home() {
-  const router = useRouter();
+  const router = useRouter()
   const handleNavigate = () => {
-    router.push("/behandlingar");
-  };
+    router.push("/behandlingar")
+  }
 
   return (
     <div>
@@ -43,5 +43,5 @@ export default function Home() {
       <Popular />
       <Footer />
     </div>
-  );
+  )
 }

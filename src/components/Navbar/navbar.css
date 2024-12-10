@@ -51,7 +51,7 @@
   width: 100%;
   border-radius: 2px;
   height: 6px;
-  background-color: black;
+  background-color: white;
   transition: all 0.4s ease;
 }
 .burger-open .burger-line:nth-child(1) {
