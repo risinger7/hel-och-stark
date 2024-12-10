@@ -1,12 +1,12 @@
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import "./om.css";
-import { roboto400, roboto700 } from "@/components/fonts/fonts";
+import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts";
 export default function OmHelOchStark() {
   return (
     <div className="om-container">
       <Navbar />
-      <div className={`${roboto400.className} om-text-container`}>
-        <h1 className={`${roboto700.className}`}>
+      <div className={`${lexend400.className} om-text-container`}>
+        <h1 className={`${lexend700.className}`}>
           Hel & Stark massageterapi & rehab
         </h1>
         <p className="om-text">

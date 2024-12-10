@@ -5,6 +5,10 @@
   --footer: var(--background);
   --navbar: var(--background);
   --black: #000;
+  --welcome-title: #e4b48d;
+  --welcome-button: #216396;
+  --m-dark: #00020e;
+  --m-light: #103752;
 }
 
 @media (prefers-color-scheme: dark) {

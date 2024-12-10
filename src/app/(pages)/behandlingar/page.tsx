@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import "./behandlingar.css";
 import { lexend200, lexend300, lexend700 } from "@/components/fonts/fonts";
 import { useState } from "react";
