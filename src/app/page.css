@@ -1,5 +1,4 @@
 .home-container {
-  border: 2px solid black;
   position: relative;
   background-image: url("../../public/hero2.jpg");
   background-repeat: no-repeat;
@@ -48,18 +47,18 @@
 
 .welcome-button {
   margin-top: 2rem;
-  background-color: #216396;
+  background-color: var(--welcome-button);
   padding-block: 1.5rem;
   padding-inline: 1.8rem;
   align-self: flex-end;
   color: white;
   cursor: pointer;
-  border-radius: 0.5rem;
+  border-radius: 9999rem;
   transition: background-color 0.2s ease-in-out;
 }
 .welcome-button:hover {
   color: var(--background);
-  background-color: var(--welcome-title);
+  background-color: #359bea;
 }
 
 .footer {
