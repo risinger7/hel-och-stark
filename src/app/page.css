@@ -19,7 +19,7 @@
 .welcome-title {
   color: #2a5495;
   line-height: 1.2;
-  font-size: 36;
+  font-size: clamp(28px, 3vw, 42px);
 }
 .welcome-text {
   color: white;

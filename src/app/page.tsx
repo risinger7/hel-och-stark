@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
-  const bookNavigate = () => {
+  const handleNavigate = () => {
     router.push("/behandlingar");
   };
 
@@ -20,14 +20,14 @@ export default function Home() {
           </h1>
           <p className={lexend400.className}>
             Välkommen till en plats där din hälsa och välmående står i centrum
-            med behanlingar anpassade efter dina unika behov.
+            med behandlingar anpassade efter dina unika behov.
           </p>
-          <button className="welcome-button" onClick={bookNavigate}>
+          <button className="welcome-button" onClick={handleNavigate}>
             Boka behandling
           </button>
         </div>
       </div>
-      <div className="footer">
+      <div className="footer"> 
         <div className="footer-info">
           <div className={`${lexend200.className} footer-info-grid`}>
             <p className={`${lexend400.className} grid-span-2`}>Kontakt</p>
