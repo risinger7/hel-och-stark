@@ -38,8 +38,6 @@ export default function OmHelOchStark() {
           Forever Livings fantastiska Aloe Veraprodukter. Varmt välkommen till
           Hel & Stark - med personligt bemötande och individanpassad behandling!
         </p>
-
-        <p></p>
         <p className="om-text">
           Camilla Arctaedius camilla@helochstark.se 070-2853322 Enklast är att
           maila eller messa mig, så svarar jag så snart jag kan.

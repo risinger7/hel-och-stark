@@ -1,7 +1,7 @@
 "use client";
 import Navbar from "@/components/navbar/Navbar";
 import "./behandlingar.css";
-import { lexend200, lexend300, lexend700 } from "@/components/fonts/fonts";
+import { lexend200, lexend700 } from "@/components/fonts/fonts";
 import { useState } from "react";
 
 export default function BehandlingarPage() {
@@ -34,7 +34,9 @@ export default function BehandlingarPage() {
             </p>
 
             {showText && (
-              <p className={`${lexend200.className} grid-text`}>
+              <p
+                className={`${lexend200.className} grid-text ${showText ? "show-text" : ""}`}
+              >
                 En mycket effektiv behandlingsform för nacke, axlar och rygg,
                 tennis- mus- eller golfarmbåge, löparknä eller allmän
                 trötthetskänsla i ryggen. Om du har ett specifikt problem,
@@ -51,10 +53,14 @@ export default function BehandlingarPage() {
               </p>
             )}
 
-            <div className="grid-image-container">
-              <img src="/hel1.png" className="grid-image"></img>
+            <div
+              className={`grid-image-container ${showText ? "hideImage" : ""}`}
+            >
+              <img src="/hel1.png" className={`grid-image`}></img>
             </div>
-            <div className="grid-buttons">
+            <div className="price-info">
+              <p>Pris: 100kr</p>
+
               <button className={`${lexend700.className} grid-button boka`}>
                 Boka
               </button>

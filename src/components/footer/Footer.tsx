@@ -1,7 +1,7 @@
-import Container from "../container/Container"
-import { lexend200, lexend400 } from "../fonts/fonts"
-import "./footer.css"
-import { Instagram, Facebook } from "lucide-react"
+import Container from "../container/Container";
+import { lexend200, lexend400 } from "../fonts/fonts";
+import "./footer.css";
+import { Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -45,14 +45,5 @@ export default function Footer() {
         </div>
       </Container>
     </div>
-  )
-}
-
-{
-  /* <p className="grid-item">Telefon:</p>
-          <p className="grid-item">070 285 33 22</p>
-          <p className="grid-item">Email:</p>
-          <p className="grid-item">camilla@helochstark.se</p>
-          <p className="grid-item">Adress:</p>
-          <p className="grid-item">Bromma, Gustavslundsvägen 26, Alviks Torg</p> */
+  );
 }

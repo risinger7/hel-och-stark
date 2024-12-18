@@ -46,7 +46,7 @@
 }
 
 .welcome-button {
-  margin-top: 2rem;
+  margin-top: 4rem;
   background-color: var(--welcome-button);
   padding-block: 1.5rem;
   padding-inline: 1.8rem;
@@ -59,4 +59,15 @@
 .welcome-button:hover {
   color: var(--background);
   background-color: #359bea;
+}
+
+@media screen and (width < 700px) {
+  .welcome-container {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .welcome-button {
+    align-self: center;
+  }
 }

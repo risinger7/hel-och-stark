@@ -16,6 +16,8 @@
 }
 
 .grid-item {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   border: 1px solid black;
   border-radius: 0.5rem;
@@ -41,18 +43,45 @@
   text-overflow: ellipsis;
   display: block;
   max-height: 24%;
+  transition: height 1s ease;
 }
+
+.grid-text-hidden {
+  line-height: 1.2;
+  padding-inline: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: none;
+  max-height: 24%;
+  transition: all 1s ease;
+}
+
+.show-text {
+  display: block;
+}
+
 .text-button {
   cursor: pointer;
   color: blue;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
+
 .margin-left {
   margin-left: 1rem;
 }
 
 button {
   all: unset;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+  flex-grow: 1;
+  border: 2px solid green;
+  z-index: 9999;
 }
 
 .grid-buttons {
@@ -78,14 +107,15 @@ button {
 }
 
 .grid-image-container {
+  border: 2px solid red;
   width: 100%;
-  height: 50%;
+  height: 40%;
   overflow: hidden;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
   object-fit: contain;
   padding: 1rem;
+  transition: height 1s ease;
 }
+
 .grid-image {
   filter: brightness(90%) grayscale(10%) contrast(110%);
   border-radius: 0.5rem;
@@ -93,10 +123,13 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: height 1s ease;
 }
-.translate50 {
-  transform: translateY(-50px);
-}
+
+/* .hideImage {
+  height: 15%;
+  border: 2px solid blue;
+} */
 
 /* Responsive for phone & tablet */
 @media screen and (width < 600px) {
