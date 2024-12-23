@@ -17,21 +17,20 @@ export default function BehandlingarPage() {
             <h1 className={`${lexend700.className} grid-item-title`}>
               Behandlande/Terapeutisk Massage
             </h1>
-            <p className={`${lexend200.className} grid-text`}>
+            <div className="grid-item-text-cont"></div>
+            <p className={`${lexend200.className} grid-item-text`}>
               För stela, korta, ömma, inflammerade muskler passar det bra med en
               mjukgörande massage och spänningsbehandling i kombination med
               djupverkande muskelbehandling och stretch.
-              <span>
-                {!showText && (
-                  <button
-                    className={`${lexend700.className} text-button`}
-                    onClick={() => setShowText(true)}
-                  >
-                    Läs mer
-                  </button>
-                )}
-              </span>
             </p>
+            {!showText && (
+              <button
+                className={`${lexend700.className} text-button`}
+                onClick={() => setShowText(true)}
+              >
+                Läs mer
+              </button>
+            )}
 
             {showText && (
               <p
@@ -66,6 +65,7 @@ export default function BehandlingarPage() {
               </button>
             </div>
           </div>
+
           <div className="grid-item">grid-item</div>
           <div className="grid-item">grid-item</div>
           <div className="grid-item">grid-item</div>
