@@ -1,74 +1,20 @@
-"use client";
-import Navbar from "@/components/navbar/Navbar";
-import "./behandlingar.css";
-/* import { lexend200, lexend700 } from "@/components/fonts/fonts"; */
-import { useEffect, useState } from "react";
+"use client"
+import Navbar from "@/components/navbar/Navbar"
+import "./behandlingar.css"
+import { lexend200, lexend300, lexend700 } from "@/components/fonts/fonts"
+import { useState } from "react"
+import Behandling from "@/components/behandling/Behandling"
 
 export default function BehandlingarPage() {
-  const [showText, setShowText] = useState<boolean>(false);
-  const [isClient, setIsClient] = useState<boolean>(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) return null;
+  const [showText, setShowText] = useState<boolean>(false)
 
   return (
-    <div>
+    <div className="behandlingar-container">
       <Navbar />
-      <h1>Titel</h1>
+      <h1 className="title-container">Behandlingar</h1>
       <div className="grid-container">
         <div className="grid">
-          <div className="grid-item">
-            <h1 className={` grid-item-title`}>
-              Behandlande/Terapeutisk Massage
-            </h1>
-            <div className="grid-item-text-cont"></div>
-            <p className={` grid-item-text`}>
-              För stela, korta, ömma, inflammerade muskler passar det bra med en
-              mjukgörande massage och spänningsbehandling i kombination med
-              djupverkande muskelbehandling och stretch.
-            </p>
-            {!showText && (
-              <button
-                className={` text-button`}
-                onClick={() => setShowText(true)}
-              >
-                Läs mer
-              </button>
-            )}
-
-            {showText && (
-              <p className={`grid-text ${showText ? "show-text" : ""}`}>
-                En mycket effektiv behandlingsform för nacke, axlar och rygg,
-                tennis- mus- eller golfarmbåge, löparknä eller allmän
-                trötthetskänsla i ryggen. Om du har ett specifikt problem,
-                rekommenderar jag massage, 3-5 gånger med ungefär en veckas
-                mellanrum.
-                <span>
-                  <button
-                    className={` text-button`}
-                    onClick={() => setShowText(false)}
-                  >
-                    Visa mindre
-                  </button>
-                </span>
-              </p>
-            )}
-
-            <div
-              className={`grid-image-container ${showText ? "hideImage" : ""}`}
-            >
-              <img src="/hel1.png" className={`grid-image`}></img>
-            </div>
-            <div className="price-info">
-              <p>Pris: 100kr</p>
-
-              <button className={`grid-button boka`}>Boka</button>
-            </div>
-          </div>
-
+          <Behandling />
           <div className="grid-item">grid-item</div>
           <div className="grid-item">grid-item</div>
           <div className="grid-item">grid-item</div>
@@ -77,5 +23,5 @@ export default function BehandlingarPage() {
         </div>
       </div>
     </div>
-  );
+  )
 }
