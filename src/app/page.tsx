@@ -1,11 +1,11 @@
 "use client"
 import Container from "@/components/container/Container"
-import "./page.css"
 import { lexend400, lexend700 } from "@/components/fonts/fonts"
 import Footer from "@/components/footer/Footer"
 import Navbar from "@/components/navbar/Navbar"
 import { useRouter } from "next/navigation"
 import Popular from "@/components/popular/Popular"
+import "./page.css"
 
 export default function Home() {
   const router = useRouter()
@@ -20,7 +20,6 @@ export default function Home() {
         <Container>
           <div className="welcome-page">
             <div className="welcome-image-container">
-              {/* <img className="welcome-image" src="/hero2.jpg"></img> */}
               <div className="welcome-container">
                 <h1 className={`${lexend700.className} welcome-title`}>
                   Varmt välkommen till Hel & Stark!

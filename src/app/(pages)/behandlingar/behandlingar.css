@@ -28,11 +28,13 @@
 }
 
 .grid-item {
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   border: 0.5px solid rgb(32, 32, 32);
   border-radius: 0.5rem;
-  min-height: 400px;
   position: relative;
 }
 
@@ -42,7 +44,7 @@
   overflow: hidden;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-self: center;
   padding: 0.5rem;
   font-size: 18px;
 }
@@ -50,16 +52,18 @@
 .grid-text {
   border: 1px solid blue;
   line-height: 1.2;
-  padding-inline: 1rem;
-  overflow: hidden;
   text-overflow: ellipsis;
   display: block;
 }
+
 .text-button {
+  width: 100%;
+  border: 1px solid blue;
   cursor: pointer;
   color: rgb(61, 61, 81);
   margin-left: 1rem;
 }
+
 .margin-left {
   margin-left: 1rem;
 }
@@ -91,10 +95,21 @@ button {
 }
 
 .grid-image-container {
+  display: block;
+  border: 2px solid red;
   width: 100%;
   object-fit: contain;
   padding: 1rem;
+  transition: transform 0.5s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+.grid-image-container.hideImage {
+  transform: translateY(100%);
+  z-index: -9999;
+}
+
 .grid-image {
   /*   filter: brightness(90%) grayscale(10%) contrast(110%); */
   border-radius: 0.5rem;
@@ -103,8 +118,20 @@ button {
   height: 100%;
   object-fit: cover;
 }
-.translate50 {
-  transform: translateY(-50px);
+
+.price-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  border: 2px solid green;
+  background-color: white;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+  z-index: 9999;
 }
 
 /* Responsive for phone & tablet */
