@@ -1,7 +1,7 @@
 "use client"
 import Container from "@/components/container/Container"
 import "./page.css"
-import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts"
+import { lexend400, lexend700 } from "@/components/fonts/fonts"
 import Footer from "@/components/footer/Footer"
 import Navbar from "@/components/navbar/Navbar"
 import { useRouter } from "next/navigation"

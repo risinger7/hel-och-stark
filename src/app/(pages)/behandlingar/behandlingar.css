@@ -1,12 +1,24 @@
+.behandlingar-container {
+  border: 2px solid blue;
+}
+
+.title-container {
+  padding-top: 4rem;
+  width: 100%;
+  text-align: center;
+  border: 1px solid red;
+}
+
 .grid-container {
   margin-top: 4rem;
-  width: 100vw;
+  width: 100%;
   border: 2px solid green;
   display: flex;
   justify-content: center;
+  margin-bottom: 4rem;
 }
 .grid {
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   min-width: 300px;
   max-width: 1200px;
   display: grid;
@@ -17,14 +29,15 @@
 
 .grid-item {
   width: 100%;
-  border: 1px solid black;
+  height: auto;
+  border: 0.5px solid rgb(32, 32, 32);
   border-radius: 0.5rem;
   min-height: 400px;
   position: relative;
-  overflow: hidden;
 }
+
 .grid-item-title {
-  color: rgb(0, 0, 0);
+  color: rgb(30, 30, 30);
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
@@ -35,16 +48,16 @@
 }
 
 .grid-text {
+  border: 1px solid blue;
   line-height: 1.2;
   padding-inline: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  max-height: 24%;
 }
 .text-button {
   cursor: pointer;
-  color: blue;
+  color: rgb(61, 61, 81);
   margin-left: 1rem;
 }
 .margin-left {
@@ -74,20 +87,16 @@ button {
 }
 
 .boka {
-  background-color: rgb(63, 63, 222);
+  background-color: rgb(30, 30, 30);
 }
 
 .grid-image-container {
   width: 100%;
-  height: 50%;
-  overflow: hidden;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
   object-fit: contain;
   padding: 1rem;
 }
 .grid-image {
-  filter: brightness(90%) grayscale(10%) contrast(110%);
+  /*   filter: brightness(90%) grayscale(10%) contrast(110%); */
   border-radius: 0.5rem;
   display: block;
   width: 100%;
