@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { playwrite400 } from "../fonts/fonts"
+import { lexend700 } from "../fonts/fonts"
 import "./navbar.css"
 import { useState } from "react"
 
@@ -9,7 +9,7 @@ export default function Navbar() {
   const [burgerOpen, setBurgerOpen] = useState<boolean>(false)
 
   return (
-    <nav className={`${playwrite400.className} navbar-container`}>
+    <nav className={`${lexend700.className} navbar-container`}>
       {/* Normal desktop classname="navbar" -- over 600px */}
       <ul className="navbar">
         <Link className="navbar-item" href={"/"}>
