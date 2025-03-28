@@ -1,27 +1,39 @@
-"use client";
-import Navbar from "@/components/navbar/Navbar";
-import "./behandlingar.css";
-import { lexend200, lexend300, lexend700 } from "@/components/fonts/fonts";
-import { useState } from "react";
 import Behandling from "@/components/behandling/Behandling";
+import "@/app/(pages)/behandlingar/behandlingar.css";
 
-export default function BehandlingarPage() {
-  const [showText, setShowText] = useState<boolean>(false);
-
+export default function Behandlingar() {
   return (
     <div className="behandlingar-container">
-      <Navbar />
-      <h1 className="title-container">Behandlingar</h1>
+      <h1 className="page-title">Våra Behandlingar</h1>
       <div className="grid-container">
-        <div className="grid">
-          <Behandling />
-          <div className="grid-item">grid-item</div>
-          <div className="grid-item">grid-item</div>
-          <div className="grid-item">grid-item</div>
-          <div className="grid-item">grid-item</div>
-          <div className="grid-item">grid-item</div>
-        </div>
+        {behandlingar.map((behandling, index) => (
+          <Behandling key={index} {...behandling} />
+        ))}
       </div>
     </div>
   );
 }
+
+const behandlingar = [
+  {
+    title: "Svensk Massage",
+    text: "En avslappnande och djupgående massage för att lösa upp spänningar.",
+    image: "/hel1.png",
+    bookingUrl: "https://boka.se/svensk-massage",
+    price: 600,
+  },
+  {
+    title: "Aromaterapi",
+    text: "En mjuk och behaglig massage med eteriska oljor för total avslappning.",
+    image: "/images/aromaterapi.jpg",
+    bookingUrl: "https://boka.se/aromaterapi",
+    price: 700,
+  },
+  {
+    title: "Idrottsmassage",
+    text: "Djupvävnadsmassage för att förbättra återhämtning och prestation.",
+    image: "/images/idrottsmassage.jpg",
+    bookingUrl: "https://boka.se/idrottsmassage",
+    price: 750,
+  },
+];

@@ -5,7 +5,6 @@ import { Playwrite_DE_Grund, Lexend_Deca } from "next/font/google";
 const playwrite200 = Playwrite_DE_Grund({ weight: "200" });
 const playwrite400 = Playwrite_DE_Grund({ weight: "400" });
 //lexend
-
 const lexend200 = Lexend_Deca({ subsets: ["latin"], weight: "200" });
 const lexend300 = Lexend_Deca({ subsets: ["latin"], weight: "300" });
 const lexend400 = Lexend_Deca({ subsets: ["latin"], weight: "400" });
