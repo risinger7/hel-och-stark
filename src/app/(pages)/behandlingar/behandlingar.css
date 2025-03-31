@@ -4,18 +4,20 @@
 }
 
 .grid-container {
-  margin-top: 8rem;
-  border: 4px solid black;
+  border: 2px solid black;
   display: grid;
-  grid-template-columns: repeat(
+  /*  grid-template-columns: repeat(
     auto-fit,
-    minmax(275px, 1fr)
+    minmax(300px, 1fr)
   ); /* Responsive columns */
-  gap: 2rem;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto;
+
   justify-content: center;
+  gap: 2rem;
   padding: 1rem;
 
-  max-width: 1400px; /* Ensures it doesn’t span too wide on large screens */
-  margin-left: auto; /* Centers the grid */
-  margin-right: auto; /* Centers the grid */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
