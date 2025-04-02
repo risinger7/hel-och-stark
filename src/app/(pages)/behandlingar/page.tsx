@@ -1,15 +1,19 @@
 "use client";
-import "./behandlingar.css";
+import Navbar from "@/components/navbar/Navbar";
+import "./grid.css";
 import Item from "./Item";
 
 export default function Behandlingar() {
   return (
     <div className="behandlingar-container">
-      <h1 className="page-title">Våra Behandlingar</h1>
-      <div className="grid-container">
-        {behandlingar.map((behandling, index) => (
-          <Item key={index} {...behandling} />
-        ))}
+      <Navbar />
+      <div className="content">
+        <h1 className="page-title">Våra Behandlingar</h1>
+        <div className="grid-container">
+          {behandlingar.map((behandling, index) => (
+            <Item key={index} {...behandling} />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -23,6 +27,38 @@ const behandlingar = [
     image: "/hel1.png",
     bookingUrl: "https://boka.se/aromaterapi",
     price: 700,
+  },
+  {
+    title: "Idrottsmassage",
+    slug: "aro",
+    text: "Djupvävnadsmassage för att förbättra återhämtning och prestation.",
+    image: "/images/idrottsmassage.jpg",
+    bookingUrl: "www.example.com",
+    price: 750,
+  },
+  {
+    title: "Idrottsmassage",
+    slug: "aro",
+    text: "Djupvävnadsmassage för att förbättra återhämtning och prestation.",
+    image: "/images/idrottsmassage.jpg",
+    bookingUrl: "www.example.com",
+    price: 750,
+  },
+  {
+    title: "Idrottsmassage",
+    slug: "aro",
+    text: "Djupvävnadsmassage för att förbättra återhämtning och prestation.",
+    image: "/images/idrottsmassage.jpg",
+    bookingUrl: "www.example.com",
+    price: 750,
+  },
+  {
+    title: "Idrottsmassage",
+    slug: "aro",
+    text: "Djupvävnadsmassage för att förbättra återhämtning och prestation.",
+    image: "/images/idrottsmassage.jpg",
+    bookingUrl: "www.example.com",
+    price: 750,
   },
   {
     title: "Idrottsmassage",

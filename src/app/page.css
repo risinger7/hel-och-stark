@@ -33,9 +33,12 @@
 }
 
 .welcome-title {
+  display: flex;
+  flex-direction: row;
   color: var(--welcome-title);
   line-height: 1.1;
-  font-size: clamp(36px, 3.5vw, 62px);
+  font-size: clamp(36px, 4vw, 62px);
+  gap: 0.5rem;
 }
 
 .welcome-text {
@@ -69,5 +72,11 @@
 
   .welcome-button {
     align-self: center;
+  }
+}
+
+@media screen and (width < 660px) {
+  .welcome-title {
+    flex-direction: column;
   }
 }

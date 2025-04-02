@@ -1,15 +1,16 @@
 .grid-item {
-  border: 2px solid blue;
+  height: 225px;
+  width: 100%;
+  border: 1px solid rgb(20, 20, 20, 0.6);
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  width: 240px;
-  height: 300px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .item-title {
-  font-size: 16px;
+  font-size: clamp(16px, 3vw, 18px);
+  color: rgb(17, 17, 17);
 }
 .item-title:hover {
   cursor: pointer;
@@ -24,8 +25,13 @@
 
 .grid-buttons {
   margin-top: auto;
-  border: 1px solid red;
   justify-items: flex-end;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.price-info {
+  font-size: 14px;
+  line-height: 1;
 }

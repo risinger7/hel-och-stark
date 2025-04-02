@@ -15,7 +15,7 @@
 }
 
 .navbar-item {
-  color: white;
+  color: rgb(41, 18, 241);
   transition: all ease 0.2s;
 }
 .navbar-item:hover {
