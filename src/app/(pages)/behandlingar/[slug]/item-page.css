@@ -1,3 +1,10 @@
 .item-page-container {
   border: 2px solid blue;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-content {
+  border: 2px solid red;
 }
