@@ -16,15 +16,14 @@ export default function Home() {
 
   return (
     <div>
-      <div className="home-container">
+      <div className="welcome-hero-container">
         <Navbar />
         <Container>
-          <div className="welcome-page">
+          <div className="welcome-hero-content">
             <div className="welcome-image-container">
               <div className="welcome-container">
                 <h1 className={`${lexend700.className} welcome-title`}>
-                  <div>Varmt välkommen </div>
-                  <div>till Hel & Stark!</div>
+                  Varmt välkommen till Hel & Stark!
                 </h1>
                 <p className={`${lexend400.className} welcome-text`}>
                   Välkommen till en plats där din hälsa och välmående står i
