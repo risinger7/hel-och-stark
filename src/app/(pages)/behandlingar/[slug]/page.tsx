@@ -3,7 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 /* import { useRouter } from "next/router"; */
 import { useEffect, useState } from "react";
-import { ItemProps } from "../Item";
+import { ItemProps } from "../GridItem";
 import Navbar from "@/components/navbar/Navbar";
 import "./item-page.css";
 import Container from "@/components/container/Container";

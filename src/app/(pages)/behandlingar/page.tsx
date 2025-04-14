@@ -1,20 +1,31 @@
 "use client";
 import Navbar from "@/components/navbar/Navbar";
 import "./grid.css";
-import Item from "./Item";
+import GridItem from "./GridItem";
+import Container from "@/components/container/Container";
+import {
+  lexend200,
+  lexend300,
+  lexend400,
+  lexend700,
+} from "@/components/fonts/fonts";
+import Footer from "@/components/footer/Footer";
 
 export default function Behandlingar() {
   return (
     <div className="behandlingar-container">
       <Navbar />
-      <div className="content">
-        <h1 className="page-title">Våra Behandlingar</h1>
+      <Container>
+        <div className="page-title-container">
+          <h1 className={`page-title ${lexend700.className}`}>Behandlingar</h1>
+        </div>
         <div className="grid-container">
           {behandlingar.map((behandling, index) => (
-            <Item key={index} {...behandling} />
+            <GridItem key={index} {...behandling} />
           ))}
         </div>
-      </div>
+      </Container>
+      <Footer />
     </div>
   );
 }

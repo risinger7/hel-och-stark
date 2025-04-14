@@ -1,19 +1,19 @@
-"use client"
-import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts"
-import "./item.css"
-import "./button.css"
-import Link from "next/link"
+"use client";
+import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts";
+import "./item.css";
+import "./button.css";
+import Link from "next/link";
 
 export type ItemProps = {
-  title: string
-  slug: string
-  text: string
-  image: string | undefined
-  bookingUrl: string
-  price: number
-}
+  title: string;
+  slug: string;
+  text: string;
+  image: string | undefined;
+  bookingUrl: string;
+  price: number;
+};
 
-export default function Item({
+export default function GridItem({
   title,
   slug,
   text,
@@ -46,5 +46,5 @@ export default function Item({
         </div>
       </div>
     </div>
-  )
+  );
 }

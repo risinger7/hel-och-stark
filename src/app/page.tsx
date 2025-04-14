@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar/Navbar";
 import { useRouter } from "next/navigation";
 import Popular from "@/components/popular/Popular";
 import "./page.css";
+import "@/app/common/button.css";
 
 export default function Home() {
   const router = useRouter();

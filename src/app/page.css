@@ -51,17 +51,21 @@
 .welcome-button {
   margin-top: 4rem;
   background-color: var(--welcome-button);
-  padding-block: 1.5rem;
-  padding-inline: 1.8rem;
+  padding-block: 1.4rem;
+  padding-inline: 1.6rem;
   align-self: flex-end;
   color: white;
   cursor: pointer;
-  border-radius: 9999rem;
+  border-radius: 0.5rem;
   transition: background-color 0.2s ease-in-out;
 }
 .welcome-button:hover {
   color: var(--background);
   background-color: #359bea;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 @media screen and (width < 700px) {
@@ -72,6 +76,8 @@
 
   .welcome-button {
     align-self: center;
+    padding-block: 0.8rem;
+    padding-inline: 1rem;
   }
 }
 
