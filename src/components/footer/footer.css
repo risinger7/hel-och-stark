@@ -1,11 +1,11 @@
 .footer-section {
-  background-color: var(--m-dark);
+  background-color: var(--bg-blue);
   width: 100%;
 }
 
 .footer {
   width: 100%;
-  background-color: var(--m-dark);
+  background-color: var(--bg-blue);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -60,7 +60,7 @@
 }
 
 .map {
-  border: 2px solid white;
+  border: none;
   width: 400px;
   height: 275px;
   overflow: hidden;

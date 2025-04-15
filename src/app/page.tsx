@@ -1,41 +1,39 @@
-"use client";
-import Container from "@/components/container/Container";
-import { lexend400, lexend700 } from "@/components/fonts/fonts";
-import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navbar/Navbar";
-import { useRouter } from "next/navigation";
-import Popular from "@/components/popular/Popular";
-import "./page.css";
-import "@/app/common/button.css";
+"use client"
+import Container from "@/components/container/Container"
+import { lexend400, lexend700 } from "@/components/fonts/fonts"
+import Footer from "@/components/footer/Footer"
+import Navbar from "@/components/navbar/Navbar"
+import { useRouter } from "next/navigation"
+import Popular from "@/components/popular/Popular"
+import "./page.css"
+import "@/app/common/button.css"
 
 export default function Home() {
-  const router = useRouter();
+  const router = useRouter()
   const handleNavigate = () => {
-    router.push("/behandlingar");
-  };
+    router.push("/behandlingar")
+  }
 
   return (
     <div>
-      <div className="welcome-hero-container">
+      <div className="home-page-container">
         <Navbar />
         <Container>
-          <div className="welcome-hero-content">
-            <div className="welcome-image-container">
-              <div className="welcome-container">
-                <h1 className={`${lexend700.className} welcome-title`}>
-                  Varmt välkommen till Hel & Stark!
-                </h1>
-                <p className={`${lexend400.className} welcome-text`}>
-                  Välkommen till en plats där din hälsa och välmående står i
-                  centrum med behandlingar anpassade efter dina unika behov.
-                </p>
-                <button
-                  className={`${lexend700.className} welcome-button`}
-                  onClick={handleNavigate}
-                >
-                  Boka behandling
-                </button>
-              </div>
+          <div className="welcome-container">
+            <div className="welcome-content">
+              <h1 className={`${lexend700.className} welcome-title`}>
+                Varmt välkommen till Hel & Stark!
+              </h1>
+              <p className={`${lexend400.className} welcome-text`}>
+                Välkommen till en plats där din hälsa och välmående står i
+                centrum med behandlingar anpassade efter dina unika behov.
+              </p>
+              <button
+                className={`${lexend700.className} welcome-button`}
+                onClick={handleNavigate}
+              >
+                Boka behandling
+              </button>
             </div>
           </div>
         </Container>
@@ -43,5 +41,5 @@ export default function Home() {
       <Popular />
       <Footer />
     </div>
-  );
+  )
 }

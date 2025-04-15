@@ -1,46 +1,35 @@
-.welcome-hero-container {
+.home-page-container {
   background-image: url("../../public/hero2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.welcome-hero-content {
+.welcome-container {
+  border: 2px solid blue;
   width: 100%;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding-inline: 3rem;
-  color: #000000;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 90vh;
+  min-height: 90dvh;
 }
 
-.welcome-image {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.welcome-container {
+.welcome-content {
+  border: 2px solid red;
   max-width: fit-content;
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .welcome-title {
-  display: flex;
-  flex-direction: row;
   color: var(--welcome-title);
   line-height: 1.1;
   font-size: clamp(36px, 4vw, 56px);
-  gap: 0.5rem;
 }
 
 .welcome-text {
@@ -51,10 +40,10 @@
 }
 
 .welcome-button {
-  margin-top: 4rem;
+  margin-top: 3rem;
   background-color: var(--welcome-button);
-  padding-block: 1.4rem;
-  padding-inline: 1.6rem;
+  padding-block: 1.2rem;
+  padding-inline: 1.4rem;
   align-self: flex-end;
   color: white;
   cursor: pointer;
@@ -70,8 +59,8 @@
   padding-left: 24px;
 }
 
-@media screen and (width < 700px) {
-  .welcome-hero-content {
+@media screen and (width < 600px) {
+  .welcome-container {
     padding: 1rem;
     justify-content: center;
   }
@@ -80,11 +69,5 @@
     align-self: center;
     padding-block: 0.8rem;
     padding-inline: 1rem;
-  }
-}
-
-@media screen and (width < 660px) {
-  .welcome-title {
-    flex-direction: column;
   }
 }

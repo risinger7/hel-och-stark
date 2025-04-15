@@ -7,7 +7,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background-color: #00020b;
+  background-color: var(--bg-blue);
 }
 
 /* Left & Right Arrow Buttons */
