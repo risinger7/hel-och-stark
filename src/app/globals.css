@@ -1,14 +1,14 @@
 :root {
   --background: #ffffff;
   --foreground: #000;
-  --yellow: rgb(250, 200, 0);
-  --footer: var(--background);
-  --navbar: var(--background);
   --black: #000;
-  --welcome-title: #e18e4a;
-  --welcome-button: #216396;
-  --welcome-button-hover: #359bea;
+  --white: #fff;
   --bg-blue: #103752;
+  --bg-footer: var(--bg-blue);
+  --welcome-title: rgb(234, 222, 210);
+  --welcome-button: #359bea;
+  /* --welcome-button: #216396; */
+  --welcome-button-hover: #4faef7;
 }
 
 /* @media (prefers-color-scheme: dark) {

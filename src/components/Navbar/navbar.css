@@ -36,6 +36,7 @@
   right: 1rem;
 }
 .burger-open {
+  margin-top: 0.5rem;
   z-index: 9999;
   cursor: pointer;
   display: none;
@@ -57,19 +58,21 @@
 }
 .burger-open .burger-line:nth-child(1) {
   transform: rotate(45deg) translateY(7px);
-  background-color: rgb(20, 20, 20);
+  background-color: white;
 }
 .burger-open .burger-line:nth-child(2) {
   display: none;
 }
 .burger-open .burger-line:nth-child(3) {
   transform: rotate(-45deg) translateY(-6px);
-  background-color: rgb(20, 20, 20);
+  background-color: white;
 }
 
 .burger-navbar-container {
   padding: 2rem;
-  background-color: azure;
+  padding-top: 8rem;
+  background-color: var(--bg-blue);
+  color: white;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -78,24 +81,26 @@
   position: absolute;
   margin: 0;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   transition: all 0.4s ease;
 }
+/* navbar when burger is open - containing items */
 .burger-navbar {
+  height: 100%;
+  z-index: 900;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   background-color: transparent;
   width: fit-content;
-  height: 50vh;
-  z-index: 900;
 }
+
 .burger-navbar-item {
   font-size: 24px;
 }
 .burger-navbar-item:hover {
   cursor: pointer;
-  color: grey;
+  color: rgb(210, 210, 210);
 }
 @media screen and (width < 600px) {
   .navbar {
