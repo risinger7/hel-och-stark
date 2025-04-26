@@ -1,15 +1,15 @@
-"use client";
-import Navbar from "@/components/navbar/Navbar";
-import "./grid.css";
-import GridItem from "./GridItem";
-import Container from "@/components/container/Container";
+"use client"
+import Navbar from "@/components/navbar/Navbar"
+import "./grid.css"
+import GridItem from "./GridItem"
+import Container from "@/components/container/Container"
 import {
   lexend200,
   lexend300,
   lexend400,
   lexend700,
-} from "@/components/fonts/fonts";
-import Footer from "@/components/footer/Footer";
+} from "@/components/fonts/fonts"
+import Footer from "@/components/footer/Footer"
 
 export default function Behandlingar() {
   return (
@@ -27,7 +27,7 @@ export default function Behandlingar() {
       </Container>
       <Footer />
     </div>
-  );
+  )
 }
 
 const behandlingar = [
@@ -56,7 +56,7 @@ const behandlingar = [
     price: 750,
   },
   {
-    title: "Idrottsmassage",
+    title: "massage",
     slug: "aro",
     text: "Djupvävnadsmassage för att förbättra återhämtning och prestation.",
     image: "/images/idrottsmassage.jpg",
@@ -79,4 +79,4 @@ const behandlingar = [
     bookingUrl: "www.example.com",
     price: 750,
   },
-];
+]

@@ -3,7 +3,8 @@
   --foreground: #000;
   --black: #000;
   --white: #fff;
-  --bg-blue: #103752;
+  --bg-blue: #1c4c86;
+  --bg-blue2: #387093;
   --bg-footer: var(--bg-blue);
   --welcome-title: rgb(234, 222, 210);
   --welcome-button: #359bea;

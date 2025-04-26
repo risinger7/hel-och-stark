@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { lexend700 } from "../fonts/fonts";
-import "./navbar.css";
-import { useState } from "react";
+import Link from "next/link"
+import { lexend700 } from "../fonts/fonts"
+import "./navbar.css"
+import { useState } from "react"
 
 export default function Navbar() {
-  const [burgerOpen, setBurgerOpen] = useState<boolean>(false);
+  const [burgerOpen, setBurgerOpen] = useState<boolean>(false)
 
   return (
     <nav className={`${lexend700.className} navbar-container`}>
@@ -19,7 +19,7 @@ export default function Navbar() {
           Behandlingar
         </Link>
         <Link className="navbar-item" href={"/aktuellt"}>
-          Aktuellt
+          Företagsmassage & Friskvård
         </Link>
         <Link className="navbar-item" href={"/om-helochstark"}>
           Om Hel&Stark
@@ -40,7 +40,7 @@ export default function Navbar() {
               Behandlingar
             </Link>
             <Link className="burger-navbar-item" href={"/aktuellt"}>
-              Aktuellt
+              Företagsmassage & Friskvård
             </Link>
             <Link className="burger-navbar-item" href={"/om-helochstark"}>
               Om Hel&Stark
@@ -60,5 +60,5 @@ export default function Navbar() {
         <div className="burger-line"></div>
       </div>
     </nav>
-  );
+  )
 }

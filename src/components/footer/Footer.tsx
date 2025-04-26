@@ -1,7 +1,7 @@
-import Container from "../container/Container";
-import { lexend200, lexend400 } from "../fonts/fonts";
-import "./footer.css";
-import { Instagram, Facebook } from "lucide-react";
+import Container from "../container/Container"
+import { lexend200, lexend400 } from "../fonts/fonts"
+import "./footer.css"
+import { Instagram, Facebook } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -30,8 +30,22 @@ export default function Footer() {
               </p>
             </div>
             <div className="footer-icons">
-              <Instagram size={48} />
-              <Facebook size={48} />
+              <a
+                className="soc-link"
+                href="https://www.instagram.com/helochstarkmassage/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram size={48} />
+              </a>
+              <a
+                className="soc-link"
+                href="https://www.facebook.com/helochstark/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook size={48} />
+              </a>
             </div>
           </div>
 
@@ -45,5 +59,5 @@ export default function Footer() {
         </div>
       </Container>
     </div>
-  );
+  )
 }
