@@ -1,5 +1,6 @@
-.my-button {
-  border-radius: 0.25rem;
+.grid-item-button {
+  background-color: var(--welcome-button);
+  border-radius: 0.4rem;
   text-transform: none;
   font-style: normal;
   font-weight: 400;
@@ -11,14 +12,13 @@
   line-height: 14px;
   letter-spacing: 1.2px;
   transition: 0.2s 0.1s;
-  background-color: var(--welcome-button);
   border: 0 solid;
   overflow: hidden;
 }
 
-.my-button:hover {
-  transition: all 0.3s ease-in;
+.grid-item-button:hover {
   background-color: var(--welcome-button-hover);
+  transition: all 0.3s ease-in;
   cursor: pointer;
   padding-right: 28px;
   padding-left: 24px;

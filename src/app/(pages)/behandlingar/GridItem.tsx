@@ -1,14 +1,13 @@
 "use client";
 import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts";
-import "./item.css";
-import "./button.css";
+import "./grid-item.css";
+import "./grid-item-button.css";
 import Link from "next/link";
 
 export type ItemProps = {
   title: string;
   slug: string;
   text: string;
-  image: string | undefined;
   bookingUrl: string;
   price: number;
 };
@@ -17,22 +16,26 @@ export default function GridItem({
   title,
   slug,
   text,
-  image,
   bookingUrl,
   price,
 }: ItemProps) {
   return (
     <div className="grid-item">
-      <h1 className={`${lexend700.className} item-title`}>{title}</h1>
+      <Link
+        href={`/behandlingar/${slug}`}
+        className={`${lexend700.className} grid-item-title`}
+      >
+        {title}
+      </Link>
       <p className={`${lexend200.className} grid-text`}>
         {text.substring(0, 100)}...
       </p>
       <Link href={`/behandlingar/${slug}`}>
         <div className="read-more">Läs mer</div>
       </Link>
-      <div className="grid-buttons">
+      <div className="grid-item-buttons">
         <Link href={bookingUrl} rel="noopener noreferrer">
-          <button className={`${lexend700.className} grid-button my-button`}>
+          <button className={`${lexend700.className} grid-item-button`}>
             Boka
           </button>
         </Link>

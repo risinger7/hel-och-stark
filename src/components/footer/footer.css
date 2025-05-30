@@ -1,6 +1,8 @@
 .footer-section {
   background-color: var(--bg-blue2);
   width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .footer {
@@ -70,6 +72,10 @@
 
 /* Mobile */
 @media screen and (width < 600px) {
+  .footer-section {
+    padding-bottom: 0rem;
+  }
+
   .footer-item {
     flex-basis: 300px;
   }

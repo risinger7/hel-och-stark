@@ -1,15 +1,10 @@
-"use client"
-import Navbar from "@/components/navbar/Navbar"
-import "./grid.css"
-import GridItem from "./GridItem"
-import Container from "@/components/container/Container"
-import {
-  lexend200,
-  lexend300,
-  lexend400,
-  lexend700,
-} from "@/components/fonts/fonts"
-import Footer from "@/components/footer/Footer"
+"use client";
+import Navbar from "@/components/navbar/Navbar";
+import "./behandlingar.css";
+import GridItem from "./GridItem";
+import Container from "@/components/container/Container";
+import { lexend700, lexend400 } from "@/components/fonts/fonts";
+import Footer from "@/components/footer/Footer";
 
 export default function Behandlingar() {
   return (
@@ -27,7 +22,7 @@ export default function Behandlingar() {
       </Container>
       <Footer />
     </div>
-  )
+  );
 }
 
 const behandlingar = [
@@ -79,4 +74,4 @@ const behandlingar = [
     bookingUrl: "www.example.com",
     price: 750,
   },
-]
+];

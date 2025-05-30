@@ -4,11 +4,11 @@
   --black: #000;
   --white: #fff;
   --bg-blue: #1c4c86;
-  --bg-blue2: #387093;
+  --bg-blue2: #2c5e75;
+  --bg-blue22: #387093;
   --bg-footer: var(--bg-blue);
   --welcome-title: rgb(234, 222, 210);
   --welcome-button: #359bea;
-  /* --welcome-button: #216396; */
   --welcome-button-hover: #4faef7;
 }
 

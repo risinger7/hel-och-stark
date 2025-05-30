@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import "./popular.css"
-import { ChevronLeft, ChevronRight } from "lucide-react" // Import arrow icons
-import { lexend300 } from "../fonts/fonts"
+import { useState, useEffect } from "react";
+import "./popular.css";
+import { ChevronLeft, ChevronRight } from "lucide-react"; // Import arrow icons
+import { lexend300 } from "../fonts/fonts";
 
 type Item = {
-  text: string
-  img?: string
-}
+  text: string;
+  img?: string;
+};
 
 const items: Item[] = [
   {
@@ -22,26 +22,26 @@ const items: Item[] = [
   {
     text: "hejsan text test",
   },
-]
+];
 
 export default function Popular() {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
 
   // Auto-scroll every 8s
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide()
-    }, 8000)
-    return () => clearInterval(interval)
-  }, [index])
+      nextSlide();
+    }, 8000);
+    return () => clearInterval(interval);
+  }, [index]);
 
   const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % items.length)
-  }
+    setIndex((prevIndex) => (prevIndex + 1) % items.length);
+  };
 
   const prevSlide = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length)
-  }
+    setIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
+  };
 
   return (
     <div className="popular">
@@ -71,5 +71,5 @@ export default function Popular() {
         </button>
       </div>
     </div>
-  )
+  );
 }

@@ -1,12 +1,20 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { lexend700 } from "../fonts/fonts"
-import "./navbar.css"
-import { useState } from "react"
+import Link from "next/link";
+import { lexend700 } from "../fonts/fonts";
+import "./navbar.css";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  const [burgerOpen, setBurgerOpen] = useState<boolean>(false)
+  const [burgerOpen, setBurgerOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (burgerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [burgerOpen]);
 
   return (
     <nav className={`${lexend700.className} navbar-container`}>
@@ -60,5 +68,5 @@ export default function Navbar() {
         <div className="burger-line"></div>
       </div>
     </nav>
-  )
+  );
 }
