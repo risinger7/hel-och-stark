@@ -30,7 +30,7 @@ export default function Navbar() {
           Företagsmassage & Friskvård
         </Link>
         <Link className="navbar-item" href={"/om-helochstark"}>
-          Om Hel&Stark
+          Om Hel & Stark
         </Link>
         <Link className="navbar-item" href={"/ovrigt"}>
           Övrigt

@@ -9,18 +9,24 @@ export default function OvrigtPage() {
       <Navbar />
       <Container>
         <div className="ovrigt-content">
-          <div className="ovrigt-logo-container">
-            <img src="forever4.jpeg"></img>
-            <img src="forever-logo.png"></img>
-          </div>
-          <div>
-            <p>
-              content asdf Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. Quibusdam repellat perspiciatis ipsa enim earum,
-              voluptatibus magnam sit nam! Incidunt exercitationem ex sunt
-              dolore alias placeat ad magnam labore, fuga blanditiis?
-            </p>
-            <p>logo</p>
+          <h1 className="ovrigt-text">
+            Återförsäljare av Forever Livings Aloe vera produkter
+          </h1>
+          <div className="ovrigt-images">
+            <div className="ovrigt-image-wrapper">
+              <img
+                src="forever1.jpeg"
+                alt="forever commercial picture"
+                className="ovrigt-image"
+              />
+            </div>
+            <div className="ovrigt-image-wrapper">
+              <img
+                src="forever4.jpg"
+                alt="forever commercial picture"
+                className="ovrigt-image"
+              />
+            </div>
           </div>
         </div>
       </Container>
