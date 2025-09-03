@@ -1,19 +1,13 @@
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
-/* import { useRouter } from "next/router"; */
 import { useEffect, useState } from "react";
 import { ItemProps } from "../GridItem";
 import Navbar from "@/components/navbar/Navbar";
 import "./item-page.css";
 import Container from "@/components/container/Container";
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
-import {
-  lexend200,
-  lexend300,
-  lexend400,
-  lexend700,
-} from "@/components/fonts/fonts";
+import { lexend300, lexend400, lexend700 } from "@/components/fonts/fonts";
 
 type Item = ItemProps;
 

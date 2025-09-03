@@ -1,5 +1,5 @@
 .item-page-container {
-  background-color: var(--background);
+  background-color: var(--bg-blue2);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -7,15 +7,15 @@
 }
 
 .go-back {
-  margin-left: 2rem;
-  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-top: 6rem;
   width: 100%;
   transition: all 0.3s ease;
-  color: #5c5c5c;
+  color: #ffffff;
 }
 
 .go-back:hover {
-  color: #111111;
+  color: #d5d5d5;
   cursor: pointer;
 }
 
@@ -25,12 +25,14 @@
 }
 
 .item-title {
+  color: white;
   padding: 1rem;
   font-size: 42px;
   font-size: clamp(34px, 4vw, 42px);
 }
 
 .text-container {
+  color: white;
   display: flex;
   flex-direction: column;
   max-width: 800px;
@@ -61,12 +63,12 @@
 }
 
 .arrow-button {
-  color: #5c5c5c;
+  color: #ffffff;
 }
 
 .arrow-button:hover {
   cursor: pointer;
-  color: #333;
+  color: #d5d5d5;
 }
 
 .tooltip-wrapper {
@@ -77,7 +79,7 @@
 .tooltip-text {
   visibility: hidden;
   opacity: 0;
-  background-color: #333;
+  background-color: #185571;
   color: #fff;
   text-align: center;
   border-radius: 6px;
