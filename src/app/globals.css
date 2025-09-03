@@ -1,14 +1,28 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000;
+  --black: #000;
+  --white: #fff;
+  --bg-blue: #1c4c86;
+  --bg-blue2: #2c5e75;
+  --bg-blue22: #387093;
+  --bg-footer: var(--bg-blue);
+  --welcome-title: rgb(234, 222, 210);
+  --welcome-button: #359bea;
+  --welcome-button-hover: #4faef7;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #171717;
+    --foreground: #fafafa;
   }
 }
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
 
 html,
 body {
@@ -28,6 +42,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scrollbar-width: thin; /* Thin scrollbar for firefox */
 }
 
 a {
@@ -35,8 +50,25 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+button {
+  all: unset;
+}
+
+/* Customize scrollbar width and appearance */
+::-webkit-scrollbar {
+  width: 6px; /* Change width here */
+  height: 6px; /* For horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
 }

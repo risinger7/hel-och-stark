@@ -1,0 +1,25 @@
+.grid-item-button {
+  background-color: var(--welcome-button);
+  border-radius: 0.4rem;
+  text-transform: none;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 22px;
+  padding-right: 22px;
+  color: #fff;
+  height: 36px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: 0.2s 0.1s;
+  border: 0 solid;
+  overflow: hidden;
+}
+
+.grid-item-button:hover {
+  background-color: var(--welcome-button-hover);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  padding-right: 28px;
+  padding-left: 24px;
+}

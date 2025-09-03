@@ -1,0 +1,44 @@
+.grid-item {
+  background-color: white;
+  height: 225px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  transition: 0.25s all ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.02);
+}
+
+.grid-item .grid-item-title {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.grid-item .grid-item-title:hover {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.read-more {
+  color: rgb(160, 160, 160);
+}
+.read-more:hover {
+  cursor: pointer;
+}
+
+.grid-item-buttons {
+  margin-top: auto;
+  justify-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-info {
+  font-size: 14px;
+  line-height: 1;
+}
