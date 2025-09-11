@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { lexend700 } from "../fonts/fonts";
-import "./navbar.css";
 import { useState, useEffect } from "react";
+import "./navbar.css";
 
 export default function Navbar() {
   const [burgerOpen, setBurgerOpen] = useState<boolean>(false);

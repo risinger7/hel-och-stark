@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "../../../components/navbar/Navbar";
 import "./om.css";
 import { lexend300, lexend700 } from "@/components/fonts/fonts";
 import Footer from "@/components/footer/Footer";

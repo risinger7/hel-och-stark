@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "../../../components/navbar/Navbar";
 import "./ovrigt.css";
 import Container from "@/components/container/Container";
 import Footer from "@/components/footer/Footer";

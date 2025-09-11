@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "../../../../components/navbar/Navbar";
 import "./item-page.css";
 import Container from "@/components/container/Container";
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
