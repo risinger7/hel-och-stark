@@ -46,7 +46,7 @@
   padding-inline: 1.2rem;
   color: white;
   cursor: pointer;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   transition: all 0.2s ease-in-out;
 }
 .welcome-button:hover {
