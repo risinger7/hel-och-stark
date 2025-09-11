@@ -1,8 +1,8 @@
 import Navbar from "../../../components/navbar/Navbar";
 import "./ovrigt.css";
 import Container from "@/components/container/Container";
-import Footer from "@/components/footer/Footer";
 import { lexend200 } from "@/components/fonts/fonts";
+import Footer from "@/components/footer/Footer";
 
 export default function OvrigtPage() {
   return (
