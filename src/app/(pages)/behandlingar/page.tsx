@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "../../../components/navbar/Navbar";
+import Navbar from "@/app/navbar/Navbar";
 import "./behandlingar.css";
 import GridItem from "./GridItem";
 import Container from "@/components/container/Container";

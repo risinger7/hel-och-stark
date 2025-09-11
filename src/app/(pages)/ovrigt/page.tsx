@@ -1,4 +1,4 @@
-import Navbar from "../../../components/navbar/Navbar";
+import Navbar from "@/app/navbar/Navbar";
 import "./ovrigt.css";
 import Container from "@/components/container/Container";
 import { lexend200 } from "@/components/fonts/fonts";

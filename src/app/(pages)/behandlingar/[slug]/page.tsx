@@ -1,7 +1,6 @@
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
-import Navbar from "../../../../components/navbar/Navbar";
 import "./item-page.css";
 import Container from "@/components/container/Container";
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
@@ -12,6 +11,7 @@ import {
   lexend700,
 } from "@/components/fonts/fonts";
 import { behandlingar } from "@/data/behandlingar";
+import Navbar from "@/app/navbar/Navbar";
 
 export default function ItemPage() {
   const params = useParams();

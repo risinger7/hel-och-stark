@@ -2,7 +2,7 @@
 import Container from "@/components/container/Container";
 import { lexend400, lexend700 } from "@/components/fonts/fonts";
 import Footer from "@/components/footer/Footer";
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "./navbar/Navbar";
 import { useRouter } from "next/navigation";
 import Addvert from "@/components/addvert/Addvert";
 import "./page.css";
