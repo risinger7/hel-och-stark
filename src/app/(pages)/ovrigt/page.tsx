@@ -1,7 +1,8 @@
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "../../../components/navbar/Navbar";
 import "./ovrigt.css";
 import Container from "@/components/container/Container";
 import Footer from "@/components/footer/Footer";
+import { lexend200 } from "@/components/fonts/fonts";
 
 export default function OvrigtPage() {
   return (
@@ -9,7 +10,7 @@ export default function OvrigtPage() {
       <Navbar />
       <Container>
         <div className="ovrigt-content">
-          <h1 className="ovrigt-text">
+          <h1 className={`ovrigt-text ${lexend200.className}`}>
             Återförsäljare av Forever Livings Aloe vera produkter
           </h1>
           <div className="ovrigt-images">

@@ -3,14 +3,9 @@ import { lexend200, lexend400, lexend700 } from "@/components/fonts/fonts";
 import "./grid-item.css";
 import "./grid-item-button.css";
 import Link from "next/link";
+import type { behandling } from "@/data/behandlingar";
 
-export type ItemProps = {
-  title: string;
-  slug: string;
-  text: string;
-  bookingUrl: string;
-  price: number;
-};
+export type ItemProps = behandling;
 
 export default function GridItem({
   title,
@@ -18,10 +13,13 @@ export default function GridItem({
   text,
   bookingUrl,
   price,
+  time,
 }: ItemProps) {
   return (
     <div className="grid-item">
       <Link
+        target="_blank"
+        rel="noopener noreferrer"
         href={`/behandlingar/${slug}`}
         className={`${lexend700.className} grid-item-title`}
       >
@@ -34,15 +32,13 @@ export default function GridItem({
         <div className="read-more">Läs mer</div>
       </Link>
       <div className="grid-item-buttons">
-        <Link href={bookingUrl} rel="noopener noreferrer">
+        <Link target="_blank" rel="noopener noreferrer" href={bookingUrl}>
           <button className={`${lexend700.className} grid-item-button`}>
-            Boka
+            <span>Boka</span>
           </button>
         </Link>
         <div>
-          <p className={`${lexend400.className} price-info`}>
-            Tid: 60 & 90 min
-          </p>
+          <p className={`${lexend400.className} price-info`}>Tid: {time} min</p>
           <p className={`${lexend400.className} price-info`}>
             Pris: {price} kr
           </p>

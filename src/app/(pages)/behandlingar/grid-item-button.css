@@ -4,22 +4,32 @@
   text-transform: none;
   font-style: normal;
   font-weight: 400;
-  padding-left: 22px;
-  padding-right: 22px;
-  color: #fff;
+  width: 80px; /* lock width so layout won't shift */
   height: 36px;
+  color: #fff;
   font-size: 0.7rem;
   line-height: 14px;
   letter-spacing: 1.2px;
-  transition: 0.2s 0.1s;
-  border: 0 solid;
+  border: 0;
   overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item-button span {
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .grid-item-button:hover {
+  padding-left: 2px;
+  transform: translateX(-2px);
   background-color: var(--welcome-button-hover);
-  transition: all 0.3s ease-in;
-  cursor: pointer;
-  padding-right: 28px;
-  padding-left: 24px;
+}
+
+.grid-item-button:hover span {
+  transform: translateX(2px); /* subtle movement */
 }

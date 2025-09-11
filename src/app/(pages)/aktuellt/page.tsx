@@ -1,5 +1,5 @@
-import Navbar from "@/components/navbar/Navbar";
 import "./aktuellt.css";
+import Navbar from "../../../components/navbar/Navbar";
 import Container from "@/components/container/Container";
 import Footer from "@/components/footer/Footer";
 import { lexend300, lexend700 } from "@/components/fonts/fonts";
