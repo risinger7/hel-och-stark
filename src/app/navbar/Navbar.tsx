@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { lexend700 } from "../fonts/fonts";
+import { lexend700 } from "../../components/fonts/fonts";
 import { useState, useEffect } from "react";
 import "./navbar.css";
 
