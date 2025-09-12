@@ -3,6 +3,7 @@ import "./ovrigt.css";
 import Container from "@/components/container/Container";
 import { lexend200 } from "@/components/fonts/fonts";
 import Footer from "@/components/footer/Footer";
+import Image from "next/image";
 
 export default function OvrigtPage() {
   return (
@@ -15,16 +16,19 @@ export default function OvrigtPage() {
           </h1>
           <div className="ovrigt-images">
             <div className="ovrigt-image-wrapper">
-              <img
-                src="forever1.jpeg"
+              <Image
+                src="/forever1.jpeg"
                 alt="forever commercial picture"
+                fill
                 className="ovrigt-image"
+                priority
               />
             </div>
             <div className="ovrigt-image-wrapper">
-              <img
-                src="forever4.jpg"
+              <Image
+                src="/forever4.jpg"
                 alt="forever commercial picture"
+                fill
                 className="ovrigt-image"
               />
             </div>

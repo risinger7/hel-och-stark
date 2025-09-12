@@ -25,6 +25,14 @@
   overflow: hidden;
 }
 
+.logotype-wrapper {
+  width: 40vw;
+  max-width: 250px;
+  height: auto;
+  aspect-ratio: 5 / 2;
+  position: relative;
+}
+
 .logotype-image {
   max-width: 100%;
   max-height: 100%;
