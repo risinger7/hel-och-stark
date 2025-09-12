@@ -46,7 +46,7 @@ export default function OmHelOchStark() {
         </p>
         <div className="om-image-wrapper">
           <Image
-            src="/camilla.jpg"
+            src="/camilla.png"
             alt="Camilla Arctaedius"
             fill
             className="om-image"

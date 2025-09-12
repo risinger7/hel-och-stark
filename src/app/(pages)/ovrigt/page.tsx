@@ -26,7 +26,7 @@ export default function OvrigtPage() {
             </div>
             <div className="ovrigt-image-wrapper">
               <Image
-                src="/forever4.jpg"
+                src="/forever4.png"
                 alt="forever commercial picture"
                 fill
                 className="ovrigt-image"
