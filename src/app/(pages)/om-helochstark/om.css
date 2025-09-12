@@ -22,21 +22,23 @@
 }
 
 .om-image-wrapper {
+  align-self: center;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
+  max-width: 200px;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .om-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px; /* optional for rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* optional for subtle depth */
-  width: 100%;
-  max-width: 200px; /* limits size on large screens */
+  object-fit: cover;
 }
 
 @media screen and (width < 750px) {

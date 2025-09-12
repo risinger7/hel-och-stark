@@ -2,6 +2,7 @@ import Navbar from "@/app/navbar/Navbar";
 import "./om.css";
 import { lexend300, lexend700 } from "@/components/fonts/fonts";
 import Footer from "@/components/footer/Footer";
+import Image from "next/image";
 export default function OmHelOchStark() {
   return (
     <div className="om-container">
@@ -44,10 +45,12 @@ export default function OmHelOchStark() {
           maila eller messa mig, så svarar jag så snart jag kan.
         </p>
         <div className="om-image-wrapper">
-          <img
-            src="camilla.jpg"
+          <Image
+            src="/camilla.jpg"
             alt="Camilla Arctaedius"
+            fill
             className="om-image"
+            priority
           />
         </div>
       </div>

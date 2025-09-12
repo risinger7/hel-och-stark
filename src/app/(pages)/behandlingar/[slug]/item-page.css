@@ -48,18 +48,17 @@
 }
 
 .image-container {
+  position: relative;
   width: 100%;
   max-width: 600px;
+  aspect-ratio: 16 / 9;
   margin: 1rem auto;
   overflow: hidden;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
+.item-image {
   object-fit: cover;
 }
 

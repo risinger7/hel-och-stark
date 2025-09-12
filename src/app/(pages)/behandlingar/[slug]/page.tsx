@@ -12,6 +12,8 @@ import {
 } from "@/components/fonts/fonts";
 import { behandlingar } from "@/data/behandlingar";
 import Navbar from "@/app/navbar/Navbar";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function ItemPage() {
   const params = useParams();
@@ -62,13 +64,27 @@ export default function ItemPage() {
               <p>{currentItem.time} min</p>
               <p>{currentItem.price} kr</p>
             </div>
-            <button>
-              <span className="item-button">Boka</span>
-            </button>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={
+                "https://www.bokadirekt.se/places/hel-stark-massageterapi-alvik-hos-naprapatlandslaget-23365"
+              }
+            >
+              <button className={`${lexend400.className} item-button`}>
+                <span>Boka</span>
+              </button>
+            </Link>
           </div>
 
           <div className="image-container">
-            <img src={currentItem.image} alt={currentItem.title} />
+            <Image
+              src={currentItem.image}
+              alt={currentItem.title}
+              fill
+              className="item-image"
+              priority
+            />
           </div>
 
           <div className="navigation-buttons">
