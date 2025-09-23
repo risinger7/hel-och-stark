@@ -19,6 +19,8 @@
 }
 
 .ovrigt-images {
+  z-index: 2;
+  padding: 0.5rem;
   display: flex;
   justify-content: center; /* centers as a row */
   align-items: center;
@@ -33,6 +35,7 @@
 }
 
 .ovrigt-image-wrapper {
+  z-index: 1;
   position: relative;
   width: 100%;
   max-width: 400px;
