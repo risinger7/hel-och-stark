@@ -1,130 +1,132 @@
 .soc-link:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .navbar-container {
-  width: 100%;
-  height: 4rem;
-  position: relative;
+    width: 100%;
+    height: 4rem;
+    position: relative;
 }
 
 .navbar {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  background-color: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: none;
 }
 
 .navbar-item {
-  color: rgb(255, 255, 255);
-  transition: all ease 0.2s;
+    color: rgb(255, 255, 255);
+    transition: all ease 0.2s;
 }
 .navbar-item:hover {
-  color: rgb(210, 210, 210);
+    color: rgb(210, 210, 210);
 }
 
 body.no-scroll {
-  overflow: hidden;
-  touch-action: none;
+    overflow: hidden;
+    touch-action: none;
 }
 
+/* smaller screens - burger */
+
 .burger {
-  position: absolute;
-  z-index: 9999;
-  cursor: pointer;
-  display: none;
-  flex-direction: column;
-  gap: 3px;
-  width: 2rem;
-  height: 2rem;
-  top: 1rem;
-  right: 1rem;
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 .burger,
 .burger-open {
-  position: fixed;
-  margin-top: 0.5rem;
-  z-index: 9999;
-  cursor: pointer;
-  display: none;
-  flex-direction: column;
-  gap: 3px;
-  width: 2rem;
-  height: 2rem;
-  top: 1rem;
-  right: 1rem;
+    margin-top: 0.5rem;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 .burger-line {
-  width: 100%;
-  border-radius: 2px;
-  height: 6px;
-  background-color: white;
-  transition: all 0.4s ease;
+    width: 100%;
+    border-radius: 2px;
+    height: 6px;
+    background-color: white;
+    transition: all 0.4s ease;
 }
 .burger-open .burger-line:nth-child(1) {
-  transform: rotate(45deg) translateY(7px);
-  background-color: white;
+    transform: rotate(45deg) translateY(7px);
+    background-color: white;
 }
 .burger-open .burger-line:nth-child(2) {
-  display: none;
+    display: none;
 }
 .burger-open .burger-line:nth-child(3) {
-  transform: rotate(-45deg) translateY(-6px);
-  background-color: white;
+    transform: rotate(-45deg) translateY(-6px);
+    background-color: white;
 }
 
 .burger-navbar-container {
-  position: fixed;
-  padding: 2rem;
-  padding-top: 8rem;
-  background-color: var(--welcome-button);
-  color: white;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  top: 0;
-  left: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  transition: all 0.4s ease;
+    z-index: 1000;
+    position: fixed;
+    padding: 2rem;
+    padding-top: 8rem;
+    background-color: var(--welcome-button);
+    color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.4s ease;
 }
 
 /* navbar when burger is open - containing items */
 .burger-navbar {
-  height: 100%;
-  z-index: 900;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  background-color: transparent;
-  width: fit-content;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: transparent;
+    width: fit-content;
 }
 
 .burger-navbar-item {
-  font-size: 24px;
+    font-size: 24px;
 }
 .burger-navbar-item:hover {
-  cursor: pointer;
-  color: rgb(210, 210, 210);
+    cursor: pointer;
+    color: rgb(210, 210, 210);
 }
 @media screen and (width < 750px) {
-  .navbar {
-    display: none;
-  }
-  .burger {
-    display: flex;
-  }
-  .burger-open {
-    display: flex;
-  }
-  .burger-navbar-container {
-    display: flex;
-  }
+    .navbar {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+    .burger-open {
+        display: flex;
+    }
+    .burger-navbar-container {
+        display: flex;
+    }
 }
