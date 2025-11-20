@@ -42,7 +42,8 @@ export default function Footer() {
                             <p
                                 className={`${lexend400.className} contact-item-2`}
                             >
-                                Bromma, Gustavslundsvägen 26, Alviks Torg
+                                hos Fotiakliniken, Gustavslundsvägen 149, Alviks
+                                torg
                             </p>
                         </div>
                         <div className="footer-icons">
