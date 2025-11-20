@@ -49,21 +49,9 @@ body.no-scroll {
 
 .burger,
 .burger-open {
-<<<<<<< HEAD
-  position: fixed;
-  margin-top: 0.5rem;
-  z-index: 10000;
-  cursor: pointer;
-  display: none;
-  flex-direction: column;
-  gap: 3px;
-  width: 2rem;
-  height: 2rem;
-  top: 1rem;
-  right: 1rem;
-=======
+    position: fixed;
     margin-top: 0.5rem;
-    z-index: 1000;
+    z-index: 10000;
     cursor: pointer;
     display: none;
     flex-direction: column;
@@ -72,7 +60,6 @@ body.no-scroll {
     height: 2rem;
     top: 1rem;
     right: 1rem;
->>>>>>> dev
 }
 
 .burger-line {
@@ -95,24 +82,6 @@ body.no-scroll {
 }
 
 .burger-navbar-container {
-<<<<<<< HEAD
-  position: fixed;
-  padding: 2rem;
-  padding-top: 8rem;
-  background-color: var(--welcome-button);
-  color: white;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  top: 0;
-  left: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 9999;
-  transition: all 0.4s ease;
-=======
-    z-index: 1000;
     position: fixed;
     padding: 2rem;
     padding-top: 8rem;
@@ -126,28 +95,18 @@ body.no-scroll {
     margin: 0;
     width: 100%;
     height: 100vh;
+    z-index: 9999;
     transition: all 0.4s ease;
->>>>>>> dev
 }
 
 /* navbar when burger is open - containing items */
 .burger-navbar {
-<<<<<<< HEAD
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  background-color: transparent;
-  width: fit-content;
-=======
     height: 100%;
-    z-index: 1000;
     display: flex;
     flex-direction: column;
     gap: 3rem;
     background-color: transparent;
     width: fit-content;
->>>>>>> dev
 }
 
 .burger-navbar-item {
