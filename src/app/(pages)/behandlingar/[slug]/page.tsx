@@ -5,109 +5,127 @@ import "./item-page.css";
 import Container from "@/components/container/Container";
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 import {
-  lexend200,
-  lexend300,
-  lexend400,
-  lexend700,
+    lexend200,
+    lexend300,
+    lexend400,
+    lexend700,
 } from "@/components/fonts/fonts";
 import { behandlingar } from "@/data/behandlingar";
 import Navbar from "@/app/navbar/Navbar";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "@/components/footer/Footer";
 
 export default function ItemPage() {
-  const params = useParams();
-  const router = useRouter();
-  const slug = params.slug as string;
+    const params = useParams();
+    const router = useRouter();
+    const slug = params.slug as string;
 
-  const currentIndex = behandlingar.findIndex((i) => i.slug === slug);
-  const currentItem = currentIndex !== -1 ? behandlingar[currentIndex] : null;
+    const currentIndex = behandlingar.findIndex((i) => i.slug === slug);
+    const currentItem = currentIndex !== -1 ? behandlingar[currentIndex] : null;
 
-  const navigate = (index: number) => {
-    const newSlug = behandlingar[index].slug;
-    router.push(`/behandlingar/${newSlug}`);
-  };
+    const navigate = (index: number) => {
+        const newSlug = behandlingar[index].slug;
+        router.push(`/behandlingar/${newSlug}`);
+    };
 
-  const nextItem = () => navigate((currentIndex + 1) % behandlingar.length);
-  const prevItem = () =>
-    navigate((currentIndex - 1 + behandlingar.length) % behandlingar.length);
+    const nextItem = () => navigate((currentIndex + 1) % behandlingar.length);
+    const prevItem = () =>
+        navigate(
+            (currentIndex - 1 + behandlingar.length) % behandlingar.length
+        );
 
-  if (!currentItem) {
-    return <p className="text-red-500">Behandlingen hittades inte!</p>;
-  }
+    if (!currentItem) {
+        return <p className="text-red-500">Behandlingen hittades inte!</p>;
+    }
 
-  return (
-    <div className="item-page-container">
-      <Navbar />
+    return (
+        <div className="item-page-container">
+            <Navbar />
 
-      <div className="go-back">
-        <button
-          className={lexend400.className}
-          onClick={() => router.push("/behandlingar")}
-        >
-          Gå tillbaka
-        </button>
-      </div>
-
-      <Container>
-        <div className="item-content">
-          <h1 className={`item-title ${lexend700.className}`}>
-            {currentItem.title}
-          </h1>
-
-          <p className={`text-container ${lexend300.className}`}>
-            {currentItem.text}
-          </p>
-
-          <div className={`price-time ${lexend200.className}`}>
-            <div>
-              <p>{currentItem.time} min</p>
-              <p>{currentItem.price} kr</p>
-            </div>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={
-                "https://www.bokadirekt.se/places/hel-stark-massageterapi-alvik-hos-naprapatlandslaget-23365"
-              }
-            >
-              <button className={`${lexend400.className} item-button`}>
-                <span>Boka</span>
-              </button>
-            </Link>
-          </div>
-
-          <div className="image-container">
-            <Image
-              src={currentItem.image}
-              alt={currentItem.title}
-              fill
-              className="item-image"
-              priority
-            />
-          </div>
-
-          <div className="navigation-buttons">
-            <div className="tooltip-wrapper">
-              <button className="arrow-button" onClick={prevItem}>
-                <CircleArrowLeft size={32} />
-              </button>
-              <span className="tooltip-text tooltip-left">
-                Föregående behandling
-              </span>
+            <div className="go-back">
+                <button
+                    className={lexend400.className}
+                    onClick={() => router.push("/behandlingar")}
+                >
+                    Gå tillbaka
+                </button>
             </div>
 
-            <div className="tooltip-wrapper">
-              <button className="arrow-button" onClick={nextItem}>
-                <CircleArrowRight size={32} />
-              </button>
-              <span className="tooltip-text tooltip-right">
-                Nästa behandling
-              </span>
-            </div>
-          </div>
+            <Container>
+                <div className="item-content">
+                    <h1 className={`item-title ${lexend700.className}`}>
+                        {currentItem.title}
+                    </h1>
+
+                    <div className={`text-container ${lexend300.className}`}>
+                        <p>{currentItem.text}</p>
+                        <ul className="symptoms">
+                            {currentItem.symptoms?.map((symptom) => {
+                                return (
+                                    <li
+                                        key={symptom}
+                                        className={`${lexend300.className}`}
+                                    >
+                                        {symptom}
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+
+                    <div className={`price-time ${lexend200.className}`}>
+                        <div>
+                            <p>{currentItem.time} min</p>
+                            <p>{currentItem.price} kr</p>
+                        </div>
+                        <Link
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={
+                                "https://www.bokadirekt.se/places/hel-stark-massageterapi-alvik-hos-naprapatlandslaget-23365"
+                            }
+                        >
+                            <button
+                                className={`${lexend400.className} item-button`}
+                            >
+                                <span>Boka</span>
+                            </button>
+                        </Link>
+                    </div>
+
+                    <div className="image-container">
+                        <Image
+                            src={currentItem.image}
+                            alt={currentItem.title}
+                            fill
+                            className="item-image"
+                            priority
+                        />
+                    </div>
+
+                    <div className="navigation-buttons">
+                        <div className="tooltip-wrapper">
+                            <button className="arrow-button" onClick={prevItem}>
+                                <CircleArrowLeft size={32} />
+                            </button>
+                            <span className="tooltip-text tooltip-left">
+                                Föregående behandling
+                            </span>
+                        </div>
+
+                        <div className="tooltip-wrapper">
+                            <button className="arrow-button" onClick={nextItem}>
+                                <CircleArrowRight size={32} />
+                            </button>
+                            <span className="tooltip-text tooltip-right">
+                                Nästa behandling
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+            <Footer />
         </div>
-      </Container>
-    </div>
-  );
+    );
 }

@@ -1,24 +1,25 @@
 .ovrigt-page {
-  background-color: var(--bg-blue2);
-  min-height: 100vh;
+    background-color: var(--bg-blue2);
+    min-height: 100vh;
 }
 
 .ovrigt-content {
-  padding-top: 4rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  gap: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    gap: 2rem;
 }
 
 .ovrigt-text {
-  padding: 2rem;
-  font-size: 24px;
-  color: #fff;
+    padding: 2rem;
+    font-size: 24px;
+    color: #fff;
 }
 
 .ovrigt-images {
+<<<<<<< HEAD
   z-index: 2;
   padding: 0.5rem;
   display: flex;
@@ -26,15 +27,25 @@
   align-items: center;
   gap: 1rem; /* spacing between images */
   width: 100%;
+=======
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* centers as a row */
+    align-items: center;
+    gap: 1rem; /* spacing between images */
+    width: 100%;
+>>>>>>> dev
 }
 
 @media screen and (width < 600px) {
-  .ovrigt-images {
-    flex-direction: column;
-  }
+    .ovrigt-images {
+        flex-direction: column;
+        padding: 1rem;
+    }
 }
 
 .ovrigt-image-wrapper {
+<<<<<<< HEAD
   z-index: 1;
   position: relative;
   width: 100%;
@@ -47,9 +58,22 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+=======
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+>>>>>>> dev
 }
 
 .ovrigt-image {
-  object-fit: cover;
-  border-radius: 12px;
+    object-fit: cover;
+    border-radius: 12px;
 }

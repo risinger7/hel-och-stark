@@ -39,6 +39,11 @@
   padding: 1rem;
 }
 
+.symptoms {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
 .price-time {
   color: white;
   margin-top: 2rem;
