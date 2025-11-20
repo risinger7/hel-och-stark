@@ -2,7 +2,6 @@ import Container from "../container/Container";
 import { lexend200, lexend400 } from "../fonts/fonts";
 import "./footer.css";
 import { Instagram, Facebook } from "lucide-react";
-import MapIframe from "./MapIframe";
 
 export default function Footer() {
     return (
@@ -66,7 +65,11 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <MapIframe />
+                    <iframe
+                        className="map"
+                        src="https://www.google.com/maps?q=Gustavslundsvägen+149R,+167+51+Bromma&output=embed"
+                        loading="lazy"
+                    />
                 </div>
             </Container>
         </div>
