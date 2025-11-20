@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://helochstark.se"),
     title: {
         default: "Hel & Stark Massageterapi i Bromma | Stockholm",
         template: "%s | Hel & Stark Massageterapi Bromma",
@@ -26,13 +28,13 @@ export const metadata: Metadata = {
         siteName: "Hel & Stark Massageterapi",
         images: [
             {
-                url: "hel1.png",
+                url: "/hel1.png",
                 width: 1200,
                 height: 630,
                 alt: "Hel & Stark Massageterapi i Bromma",
             },
             {
-                url: "hero2.jpg",
+                url: "/hero2.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Hel & Stark Massageterapi i Bromma",
@@ -67,25 +69,29 @@ export default function RootLayout({
     return (
         <html lang="sv">
             <head>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "LocalBusiness",
-                        name: "Hel & Stark Massageterapi",
-                        address: {
-                            "@type": "PostalAddress",
-                            streetAddress: "Din adress",
-                            addressLocality: "Bromma",
-                            addressRegion: "Stockholm",
-                            postalCode: "12345",
-                            addressCountry: "SE",
-                        },
-                        telephone: "+4670xxxxxxx",
-                        url: "https://helochstark.se",
-                        description:
-                            "Massage och massageterapi i Bromma, Stockholm. Gravidmassage, lymfmassage, idrottsmassage.",
-                    })}
-                </script>
+                <Script
+                    id="local-business"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "LocalBusiness",
+                            name: "Hel & Stark Massageterapi",
+                            address: {
+                                "@type": "PostalAddress",
+                                streetAddress: "Din adress",
+                                addressLocality: "Bromma",
+                                addressRegion: "Stockholm",
+                                postalCode: "12345",
+                                addressCountry: "SE",
+                            },
+                            telephone: "+4670xxxxxxx",
+                            url: "https://helochstark.se",
+                            description:
+                                "Massage och massageterapi i Bromma, Stockholm. Gravidmassage, lymfmassage, idrottsmassage.",
+                        }),
+                    }}
+                />
             </head>
             <body suppressHydrationWarning={true}>{children}</body>
         </html>
